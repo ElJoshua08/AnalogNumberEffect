@@ -10,7 +10,7 @@ const randInt = (min, max) => {
 
 function setRandomImage() {
   let randomImage = randInt(0, IMAGES_LENGTH);
-  let imageUrl = `url(./images/${randomImage}.jpg)`;
+  let imageUrl = `url(./images/${randomImage}.webp)`;
   let $body = document.body;
   $body.style.backgroundImage = imageUrl;
 }
