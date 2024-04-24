@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all .3s ease;
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  background-color: #000;
+  height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#numbersContainer {
+  width: 60%;
+  height: 120px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(59, 59, 59, 0.37);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 25px #000;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+#numbersContainer .digit {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#numbersContainer .digit .number {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  color: #e6e0e0;
+}
+
+#reloadBackground {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+#reloadBackground:hover {
+  color: #e09f10;
+  transform: rotateZ(180deg);
+}
